@@ -1,15 +1,15 @@
 /* --- Import Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 /* --- Global Style --- */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f5f5dc; /* Cream background */
-    color: #4b3832; /* Earthy brown */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fbf7f0; /* Light cream background for warmth */
+    color: #3d3b3c; /* Softer black for text */
     max-width: 100vw;
     margin: 0;
     padding: 0 20px;
-    line-height: 1.6;
+    line-height: 1.7;
     overflow-x: hidden;
 }
 
@@ -17,26 +17,30 @@ body {
 h1 {
     text-align: center;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
-    color: #6b4f4f;
-    background: linear-gradient(90deg, #8c6c6c, #b2967d);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #346751; /* Earthy, neutral green */
+    letter-spacing: 1px;
+    padding: 20px 0;
+    border-bottom: 2px solid #a8d5ba; /* Subtle underline for emphasis */
 }
 
 p.subtitle {
     text-align: center;
     font-weight: 400;
-    font-size: 1.2rem;
-    color: #866f58;
+    font-size: 1.25rem;
+    color: #5b5b5b;
     margin-bottom: 40px;
+    padding: 0 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.6;
 }
 
 /* --- Separator --- */
 hr {
     border: none;
-    border-top: 1px solid #d9d0c1;
+    border-top: 1px solid #ccc;
     width: 80%;
     margin: 40px auto;
 }
@@ -54,45 +58,44 @@ ul.newsletters {
 
 /* --- Newsletter Cards --- */
 ul.newsletters li {
-    background: #fefbf3; /* Slightly off-white for softness */
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fffefa; /* Bright yet soft to make text pop */
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 ul.newsletters li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* --- Newsletter Links --- */
 ul.newsletters a {
     text-decoration: none;
-    color: #c76523; /* Warm, earthy orange */
+    color: #52796f; /* Cool, muted green */
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: block;
     transition: color 0.3s ease;
 }
 
 ul.newsletters a:hover {
-    color: #926f34; /* Darker earth tone */
-    text-decoration: underline;
+    color: #2f5d55; /* Darker shade for hover effect */
 }
 
 /* --- Optional Preview Text --- */
 .newsletter-preview {
-    font-size: 0.95rem;
-    color: #5d504d;
-    margin-top: 10px;
-    line-height: 1.4;
+    font-size: 1rem;
+    color: #6b6b6b;
+    margin-top: 8px;
+    line-height: 1.5;
 }
 
 /* --- Footer --- */
 footer {
     text-align: center;
-    color: #766e60;
+    color: #999;
     margin-top: 60px;
     font-size: 0.9rem;
     padding-bottom: 20px;
@@ -101,7 +104,7 @@ footer {
 /* --- Responsive Adjustments --- */
 @media (max-width: 600px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     ul.newsletters li {
         padding: 20px;
