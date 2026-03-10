@@ -1,14 +1,15 @@
-/* --- Global Page Style --- */
+/* --- Import Google Fonts --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+/* --- Global Style --- */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f9f9f9;
-    color: #1c1c1e;
+    background-color: #fafafa;
+    color: #333;
     max-width: 900px;
     margin: 60px auto;
     padding: 0 20px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 /* --- Header --- */
@@ -16,22 +17,23 @@ h1 {
     text-align: center;
     font-weight: 700;
     font-size: 3rem;
-    margin-bottom: 5px;
-    color: #000;
+    margin-bottom: 10px;
+    color: #222;
+    transition: color 0.3s ease;
 }
 
 p.subtitle {
     text-align: center;
     font-weight: 400;
-    font-size: 1.1rem;
-    color: #666;
+    font-size: 1.2rem;
+    color: #555;
     margin-bottom: 40px;
 }
 
 /* --- Separator --- */
 hr {
     border: none;
-    border-top: 1px solid #e0e0e0;
+    border-top: 2px solid #eee;
     margin: 50px 0;
 }
 
@@ -47,49 +49,51 @@ ul.newsletters {
 /* --- Newsletter Cards --- */
 ul.newsletters li {
     background: #fff;
-    border-radius: 16px;
-    padding: 30px 20px;
-    box-shadow: 0 12px 24px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    padding: 25px 18px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 ul.newsletters li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 16px 32px rgba(0,0,0,0.08);
+    transform: translateY(-7px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1);
 }
 
 /* --- Newsletter Links --- */
 ul.newsletters a {
     text-decoration: none;
-    color: #0071e3; /* modern bright blue */
+    color: #0096c7;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     display: block;
+    transition: color 0.3s ease;
 }
 
 ul.newsletters a:hover {
+    color: #005f7f;
     text-decoration: underline;
 }
 
 /* --- Optional Preview Text --- */
 .newsletter-preview {
-    font-size: 0.95rem;
-    color: #555;
-    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 12px;
 }
 
 /* --- Footer --- */
 footer {
     text-align: center;
-    color: #999;
+    color: #888;
     margin-top: 80px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 500px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     ul.newsletters li {
         padding: 20px 15px;
