@@ -1,14 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>De nieuwsbrief</title>
+    <meta charset="UTF-8">
+    <title>Ha Staluego Nieuwsbrief</title>
+    <style>
+        /* --- General layout --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fdf6f0;
+            color: #333;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: #d35400;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        p.subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #eee;
+            margin: 30px 0;
+        }
+
+        /* --- Newsletter list --- */
+        ul.newsletters {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.newsletters li {
+            background: #fff;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        ul.newsletters li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        ul.newsletters a {
+            text-decoration: none;
+            color: #d35400;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        ul.newsletters a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            color: #aaa;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <h1>De nieuwsbrief</h1>
-    <p>Welkom lieve fans en veel leesplezier!</p>
-    <ul>
-        <li><a href="#">Newsletter 1</a></li>
-        <li><a href="#">Newsletter 2</a></li>
+    <h1>Ha Staluego Nieuwsbrief</h1>
+    <p class="subtitle">Welkom lieve fans en veel leesplezier!</p>
+    <hr>
+
+    <ul class="newsletters">
+        <li><a href="newsletter1.html" target="_blank">Nieuwsbrief 1 – Maart 2026</a></li>
+        <li><a href="newsletter2.html" target="_blank">Nieuwsbrief 2 – April 2026</a></li>
     </ul>
+
+    <footer>
+        &copy; 2026 Ha Staluego. Alle rechten voorbehouden.
+    </footer>
 </body>
 </html>
